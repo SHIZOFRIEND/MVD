@@ -1,0 +1,122 @@
+﻿<Window x:Class="MVD.PagesAndWindows.AddSotr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVD.PagesAndWindows"
+        mc:Ignorable="d"
+        Title="Окно добавления сотрудника" Height="700" Width="800">
+    <Grid Background="#FFCCE7ED">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="174*"/>
+            <ColumnDefinition Width="527*"/>
+            <ColumnDefinition Width="99*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image x:Name="imgPhoto" Source="/Resources/images.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" Stretch="Uniform" Width="140" Margin="25,14,0,0" Height="99" Grid.RowSpan="2"/>
+            <Button Content="Добавить фото" Click="AddPhotoButton_Click" VerticalAlignment="Top" HorizontalAlignment="Left" Height="36" Margin="51,114,0,0" Grid.Row="1" Background="#FFAFD8F0"/>
+        </Grid>
+        <StackPanel Grid.ColumnSpan="3" Margin="140,6,89,5">
+            <StackPanel Orientation="Horizontal" Height="42" Width="305">
+                <Label Content="Имя: *"/>
+                <TextBox x:Name="txtImya" Width="183" Text="{Binding FirstName}" Height="28" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="42" Width="371">
+                <Label Content="Фамилия: *"/>
+                <TextBox x:Name="txtfamilia"  Margin="5,0,0,0" Width="184" Text="{Binding LastName}" Height="25" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="42" Width="380">
+                <Label Content="Отчество:   "/>
+                <TextBox x:Name="txtotchestvo"  Margin="5,0,0,0" Width="190" Text="{Binding LastestName}" Height="29" RenderTransformOrigin="0.5,0.5">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.062"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="42" Width="462">
+                <Label Content="Номер телефона: *"/>
+                <TextBox x:Name="txtNumberPhone" Margin="5,0,0,0" Width="188" Text="{Binding NumberPhone}"  Height="28"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="42" Width="323">
+                <Label Content="Почта: *" Width="42"/>
+                <TextBox x:Name="txtPochta" Margin="5,0,0,0" Width="189" Text="{Binding Email}" Height="28" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="42" Width="457">
+                <Label Content="Серия паспорта: *"/>
+                <TextBox x:Name="txtseria" Margin="5,0,0,0" Width="191" Text="{Binding PasportaSeria}" Height="29" RenderTransformOrigin="0.5,0.5" >
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.013"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="42" Width="347">
+                <Label Content="Логин: *"/>
+                <TextBox x:Name="txtlogin" Margin="5,0,0,0" Width="189" Text="{Binding Login}" Height="30" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="42" Width="362">
+                <Label Content="Пароль: *"/>
+                <TextBox x:Name="txtpassword" Margin="5,0,0,0" Width="193" Text="{Binding Password}"  Height="32"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="38" Width="462">
+                <Label Content="Номер паспорта: *" Width="112"/>
+                <TextBox x:Name="txtnomerpasporta" Margin="5,0,0,0" Width="193" Text="{Binding PasportNumber}"  Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="38" Width="462">
+                <Label Content="Дата рождения: *" Width="112"/>
+                <TextBox x:Name="txtdata" Margin="5,0,0,0" Width="193" Text="{Binding DataOfBirth}"  Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="38" Width="600">
+                <Label Content="Дата принятия на работу: *" Width="166"/>
+                <TextBox x:Name="txtdatahire" Margin="5,0,0,0" Width="193" Text="{Binding HireDate}"  Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="38" Width="380">
+                <Label Content="Зарплата: *" Width="70"/>
+                <TextBox x:Name="txtsalary" Margin="5,0,0,0" Width="193" Text="{Binding Salary}"  Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5" Width="389">
+                <Label Content="Должность:" Width="74"/>
+                <ComboBox x:Name="cb" Width="195" Height="28" Margin="5,0,0,0" SelectionChanged="ComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Начальник управления" Tag="1"/>
+                    <ComboBoxItem Content="Заместитель начальника управления" Tag="2"/>
+                    <ComboBoxItem Content="Оперуполномоченный" Tag="3"/>
+                    <ComboBoxItem Content="Старший оперуполномоченный" Tag="4"/>
+                    <ComboBoxItem Content="Старший оперуполномоченный по ОВД" Tag="5"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5" Width="329">
+                <Label Content="Отдел:" Width="45"/>
+                <ComboBox x:Name="cbdep" Width="194" Height="28" Margin="5,0,0,0" SelectionChanged="ComboBoxdep_SelectionChanged">
+                    <ComboBoxItem Content="Отдел по организации работы управления" Tag="1"/>
+                    <ComboBoxItem Content="Отдел по расследованиям в сфере информационно-телекоммуникационных технологий" Tag="2"/>
+                    <ComboBoxItem Content="Отдел по рассмотрению претензий в сети Интернет" Tag="3"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5" Width="449">
+                <Label Content="Двухфакторная&#xD;&#xA;аутентификация:" Width="104"/>
+                <ComboBox x:Name="cbtwofactor" Width="195" Height="28" Margin="5,0,0,0" SelectionChanged="ComboBoxtwofac_SelectionChanged">
+                    <ComboBoxItem Content="Нет двухфакторной аутентификации" Tag="0"/>
+                    <ComboBoxItem Content="Есть двухфакторная аутентификация" Tag="1"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10" Grid.Column="1" Grid.ColumnSpan="2">
+            <Button Content="Сохранить" Click="SaveButton_Click" Margin="0,0,10,0" Height="32" Width="105" Background="#FFAFD8F0"/>
+            <Button Content="Очистить" Click="CleanButton_Click" Height="32" Width="95" Margin="0,0,10,0" Background="#FFAFD8F0"/>
+        </StackPanel>
+        <TextBlock TextWrapping="Wrap" Margin="14,474,0,85"><Run Language="ru-ru" Text="*"/><Run Text=" "/><Run Language="ru-ru" Text="обязательные поля"/></TextBlock>
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="MVD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVD"
+        mc:Ignorable="d" 
+
+        Title="Стартовое окно" Height="800" Width="800">
+    <Grid Background="#FFCCE7ED">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#FF23365F" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="87*"/>
+                <ColumnDefinition Width="713*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="btnBack" HorizontalAlignment="Left" Content="Назад" Click="btnBack_Click" Grid.Column="1" Margin="603,10,0,10" Width="100" Background="#FFAFD8F0" />
+            <Image Width="45" Height="45" HorizontalAlignment="Left" Margin="5"/>
+        </Grid>
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="FrmMain_ContentRendered" Grid.ColumnSpan="4"/>
+    </Grid>
+</Window>

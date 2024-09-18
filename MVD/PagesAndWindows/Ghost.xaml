@@ -1,0 +1,66 @@
+﻿<Page x:Class="MVD.PagesAndWindows.Ghost"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MVD.PagesAndWindows"
+      mc:Ignorable="d" 
+      Title="Окно создания заявления гражданином"  Height="700" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.ColumnSpan="3" Text="Заявление" 
+            FontWeight="Bold" FontSize="20" HorizontalAlignment="Center"  />
+        <StackPanel Grid.ColumnSpan="3" Margin="20">
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <Label Content="Имя: *" Width="150"/>
+                <TextBox x:Name="txtImya" Width="300" Text="{Binding FirstName}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Фамилия: *" Width="150"/>
+                <TextBox x:Name="txtfamilia" Width="300" Text="{Binding LastName}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Отчество:" Width="150"/>
+                <TextBox x:Name="txtotchestvo" Width="300" Text="{Binding LastestName}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Номер телефона: *" Width="150"/>
+                <TextBox x:Name="txtNumberPhone" Width="300" Text="{Binding NumberPhone}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Серия паспорта: *" Width="150"/>
+                <TextBox x:Name="txtseria" Width="300" Text="{Binding PasportaSeria}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Номер паспорта: *" Width="150"/>
+                <TextBox x:Name="txtnomerpasporta" Width="300" Text="{Binding PasportNumber}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Дата рождения: *" Width="150"/>
+                <TextBox x:Name="txtdata" Width="300" Text="{Binding DataOfBirth}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Обращение: *" Width="150"/>
+                <TextBox x:Name="txtstatment" Width="610" Text="{Binding Statment}" AcceptsReturn="True" Height="278"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Grid.Row="2" Grid.ColumnSpan="3">
+            <Button Content="Сохранить" Click="SaveButton_Click" Margin="0,0,10,0" Height="32" Width="105" Background="#FFAFD8F0"/>
+            <Button Content="Очистить" Click="CleanButton_Click" Height="32" Width="95" Background="#FFAFD8F0"/>
+        </StackPanel>
+        <TextBlock TextWrapping="Wrap" Margin="20,0,0,10" Grid.Row="2" Grid.ColumnSpan="3" VerticalAlignment="Bottom">
+            <Run Language="ru-ru" Text="*"/>
+            <Run Text=" "/>
+            <Run Language="ru-ru" Text="обязательные поля"/>
+        </TextBlock>
+    </Grid>
+</Page>

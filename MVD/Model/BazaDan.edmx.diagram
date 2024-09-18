@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="105a5fba59524fff9bb5e524bbc9627a" Name="Diagram1">
+        <EntityTypeShape EntityType="MVDBDModel.Arrest" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Cases" Width="1.5" PointX="8.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.CaseStatus" Width="1.5" PointX="6" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.CaseType" Width="1.5" PointX="6" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Crimes" Width="1.5" PointX="10.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.CrimeType" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Departments" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Employee" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.EntrancePass" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Evidence" Width="1.5" PointX="13.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.EvidenceType" Width="1.5" PointX="11.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.ForClient" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Investigation" Width="1.5" PointX="10.5" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.InvestigationStatus" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.InvestigationType" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Rol" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.ServiceItems" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Suspects" Width="1.5" PointX="15.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Training" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.TrainingStatus" Width="1.5" PointX="0.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.TypeUniform" Width="1.5" PointX="0.75" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Unifrorm" Width="1.5" PointX="3" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Vehicle" Width="1.5" PointX="3" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.VehicleStatus" Width="1.5" PointX="0.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.VehicleType" Width="1.5" PointX="0.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Weapon" Width="1.5" PointX="3" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.WeaponStatus" Width="1.5" PointX="0.75" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.WeaponType" Width="1.5" PointX="0.75" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MVDBDModel.Witnesses" Width="1.5" PointX="10.5" PointY="23.375" IsExpanded="true" />
+        <AssociationConnector Association="MVDBDModel.FK_Arrest_Cases" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Arrest_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Arrest_Suspects" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Cases_CaseStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Cases_CaseType" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Cases_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Crimes_Cases" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Evidence_Cases" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Investigation_Cases" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Suspects_Cases" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Witnesses_Cases" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Crimes_CrimeType" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Suspects_Crimes" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Employee_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Employee_Rol" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Investigation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_ServiceItems_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_ServiceItems_EntrancePass" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Evidence_EvidenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Investigation_InvestigationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Investigation_InvestigationType" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_ServiceItems_Training" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_ServiceItems_Unifrorm" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_ServiceItems_Vehicle" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_ServiceItems_Weapon" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Training_TrainingStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Unifrorm_TypeUniform" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Vehicle_VehicleStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Vehicle_VehicleType" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Weapon_WeaponStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="MVDBDModel.FK_Weapon_WeaponType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

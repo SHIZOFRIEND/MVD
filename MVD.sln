@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVD", "MVD\MVD.csproj", "{48F40426-719B-415C-A677-AA748E6D40E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashPassword", "HashPassword\HashPassword.csproj", "{5D2B989C-CC4B-4874-AEF9-37844D4ABD7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportExelWordGS", "..\..\..\Desktop\ImportExelWordGS\ImportExelWordGS\ImportExelWordGS.csproj", "{AC358B98-6E44-487E-96E5-9D4482E0E122}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "importExel", "..\..\..\Desktop\importExel\importExel\importExel.csproj", "{2100DC41-757F-4208-8C17-6C84D96B165A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddEmployee", "AddEmployee\AddEmployee.csproj", "{F655A8A7-5557-42C9-95C2-8B369AB12611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckConnection", "CheckConnection\CheckConnection.csproj", "{D01AC2DE-3DDF-4E87-9EAA-3F691FD1087A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVDUnitTesting", "MVDUnitTesting\MVDUnitTesting.csproj", "{7BDB86A0-EA4C-4CB1-B8E3-1CA5402AED1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F40426-719B-415C-A677-AA748E6D40E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F40426-719B-415C-A677-AA748E6D40E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F40426-719B-415C-A677-AA748E6D40E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F40426-719B-415C-A677-AA748E6D40E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2B989C-CC4B-4874-AEF9-37844D4ABD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2B989C-CC4B-4874-AEF9-37844D4ABD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2B989C-CC4B-4874-AEF9-37844D4ABD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2B989C-CC4B-4874-AEF9-37844D4ABD7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC358B98-6E44-487E-96E5-9D4482E0E122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC358B98-6E44-487E-96E5-9D4482E0E122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC358B98-6E44-487E-96E5-9D4482E0E122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC358B98-6E44-487E-96E5-9D4482E0E122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2100DC41-757F-4208-8C17-6C84D96B165A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2100DC41-757F-4208-8C17-6C84D96B165A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2100DC41-757F-4208-8C17-6C84D96B165A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2100DC41-757F-4208-8C17-6C84D96B165A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F655A8A7-5557-42C9-95C2-8B369AB12611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F655A8A7-5557-42C9-95C2-8B369AB12611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F655A8A7-5557-42C9-95C2-8B369AB12611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F655A8A7-5557-42C9-95C2-8B369AB12611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01AC2DE-3DDF-4E87-9EAA-3F691FD1087A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01AC2DE-3DDF-4E87-9EAA-3F691FD1087A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01AC2DE-3DDF-4E87-9EAA-3F691FD1087A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01AC2DE-3DDF-4E87-9EAA-3F691FD1087A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDB86A0-EA4C-4CB1-B8E3-1CA5402AED1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDB86A0-EA4C-4CB1-B8E3-1CA5402AED1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDB86A0-EA4C-4CB1-B8E3-1CA5402AED1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDB86A0-EA4C-4CB1-B8E3-1CA5402AED1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4280070-1291-4CB4-965A-A673C840BA3B}
+	EndGlobalSection
+EndGlobal
